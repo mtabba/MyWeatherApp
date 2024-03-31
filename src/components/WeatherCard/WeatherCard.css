@@ -1,0 +1,35 @@
+#weather {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap; */
+}
+
+
+.cityName{
+    font-weight: 600;
+}
+
+
+.grid-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hourly-weather{
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    font-size: 12px;
+}
+
+.w-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

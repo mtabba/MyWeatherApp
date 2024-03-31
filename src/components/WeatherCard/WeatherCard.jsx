@@ -50,7 +50,8 @@ function WeatherCard(props) {
 
 
     const getHour = (time) =>{
-        return time.split(" ")[1]
+        // return time.split(" ")[1]
+        return "amnah"
     }
 
 
@@ -103,11 +104,11 @@ function WeatherCard(props) {
                     </div>
                     <div className="card-body hourly-weather">
                         {hourlyWeather.map((data) => {
-                            return <div >
+                            return <div className="h-container" >
                                 <img src={data.condition.icon} />
-                                {/* <span>{data.condition.text}</span> */}
-                                <span>{data.temp_c}&deg; C</span>
-                                <span>{()=>{getHour(data.time)}}</span>
+                                <h6 className="font-weight-300">{data.temp_c}&deg; C</h6>
+                                <span>{data.condition.text}</span>
+                                <span>{data.time.split(" ")[1]}</span>
                             </div>
 
                         })}
